@@ -7,7 +7,7 @@ import "swiper/css/bundle";
 import ListingItem from "../components/ListingItem";
 import CountUp from "react-countup";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa"; // Import FaSearch for the search icon
+import { FaSearch } from "react-icons/fa";
 
 SwiperCore.use([Navigation, Autoplay]);
 
@@ -72,11 +72,13 @@ export default function Home() {
           className="flex-1 flex flex-col justify-center items-start px-4 py-8 lg:px-10 lg:py-16"
           style={{ backgroundColor: "#131110" }}
         >
+          <br />
           <h1 className="font-bold text-3xl lg:text-5xl mb-4 lg:ml-20">
             Unlock the <br />
             Door to Your
             <br /> <span className="text-blue-500">New Home</span>
           </h1>
+          <br></br>
           <div className="text-white mt-4 text-lg lg:text-xl xl:text-xl mb-6 lg:ml-20">
             <span className="block mb-2">
               Step into a world where every doorway leads to possibility
@@ -94,6 +96,7 @@ export default function Home() {
           >
             Let's get started...
           </Link>
+          <br />
 
           {/* Search Form */}
           <form
@@ -111,10 +114,11 @@ export default function Home() {
               <FaSearch className="text-white" />
             </button>
           </form>
+          <br />
 
           <div className="mt-10">
             {/* Social Media Handles */}
-            <div className="flex gap-4 lg:gap-8 mb-4 lg:ml-20">
+            <div className="flex gap-4 lg:gap-10 mb-4 lg:ml-20">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -148,6 +152,7 @@ export default function Home() {
                 <FaLinkedin size={30} />
               </a>
             </div>
+            <br />
 
             {/* Stats Section */}
             <div className="flex justify-around w-full max-w-4xl text-blue-500 mt-10 gap-10 lg:ml-12">
@@ -177,7 +182,7 @@ export default function Home() {
 
         {/* Right Section - Swiper */}
         <div
-          className="flex-none w-full lg:w-1/2 p-4 lg:p-10 lg:mr-20"
+          className="flex-none w-full lg:w-1/2 p-4 lg:p-10 lg:mr-20 mt-20"
           style={{ backgroundColor: "#131110" }}
         >
           <Swiper
