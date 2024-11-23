@@ -57,17 +57,27 @@ export default function Listing() {
         </p>
       )}
       {listing && !loading && !error && (
-        <div>
-          <Swiper navigation>
+        <div className="p-10">
+          <Swiper
+            navigation
+            loop={true}
+            className="rounded-lg shadow-lg"
+            slidesPerView={1}
+            spaceBetween={10}
+          >
             {listing.imageUrls.map((url) => (
               <SwiperSlide key={url}>
                 <div
-                  className="h-[550px] bg-center bg-no-repeat bg-cover"
+                  className="relative h-[550px] bg-center bg-cover"
                   style={{ backgroundImage: `url(${url})` }}
-                ></div>
+                >
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
+
           <div className="fixed top-[13%] right-[3%] z-10 border rounded-full w-12 h-12 flex justify-center items-center bg-slate-100 cursor-pointer">
             <FaShare
               className="text-slate-500"

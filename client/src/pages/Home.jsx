@@ -69,7 +69,7 @@ export default function Home() {
       >
         {/* Left Section - Text and Search */}
         <div
-          className="flex-1 flex flex-col justify-center items-start px-4 py-8 lg:px-10 lg:py-16"
+          className="flex-1 flex flex-col justify-center items-start px-4 py-8 lg:px-10 lg:py-4"
           style={{ backgroundColor: "#131110" }}
         >
           <br />
@@ -81,13 +81,7 @@ export default function Home() {
           <br></br>
           <div className="text-white mt-4 text-lg lg:text-xl xl:text-xl mb-6 lg:ml-20">
             <span className="block mb-2">
-              Step into a world where every doorway leads to possibility
-            </span>
-            <span className="block mb-2">
-              At Homii we don't just find houses; we unveil dreams
-            </span>
-            <span className="block">
-              Let's turn your vision of home into a reality
+              At Homii we don't just find properties, we unveil dreams...
             </span>
           </div>
           <Link
@@ -101,7 +95,7 @@ export default function Home() {
           {/* Search Form */}
           <form
             onSubmit={handleSearch}
-            className="mt-6 flex items-center bg-gray-800 p-2 rounded-2xl lg:ml-20 w-full max-w-lg"
+            className="mt-4 flex items-center bg-gray-800 p-2 rounded-2xl lg:ml-20 w-full max-w-lg"
           >
             <input
               type="text"
@@ -116,7 +110,7 @@ export default function Home() {
           </form>
           <br />
 
-          <div className="mt-10">
+          <div className="mt-5">
             {/* Social Media Handles */}
             <div className="flex gap-4 lg:gap-10 mb-4 lg:ml-20">
               <a
@@ -155,7 +149,7 @@ export default function Home() {
             <br />
 
             {/* Stats Section */}
-            <div className="flex justify-around w-full max-w-4xl text-blue-500 mt-10 gap-10 lg:ml-12">
+            <div className="flex justify-around w-full max-w-4xl mb-10 text-blue-500 gap-10 lg:ml-12">
               <div className="flex flex-col items-center text-center">
                 <span className="text-3xl font-bold">
                   <CountUp start={50} end={1000} duration={5} /> <span>+</span>
