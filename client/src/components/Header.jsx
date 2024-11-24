@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -46,7 +45,7 @@ export default function Header() {
               <img
                 className="rounded-full h-10 w-10 object-cover border-2 border-white"
                 src={currentUser.avatar}
-                alt="profile"
+                alt="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
               />
             ) : (
               <li className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors duration-300">

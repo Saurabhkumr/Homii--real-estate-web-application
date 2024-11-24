@@ -79,11 +79,6 @@ export default function Home() {
             <br /> <span className="text-blue-500">New Home</span>
           </h1>
           <br></br>
-          <div className="text-white mt-4 text-lg lg:text-xl xl:text-xl mb-6 lg:ml-20">
-            <span className="block mb-2">
-              At Homii we don't just find properties, we unveil dreams...
-            </span>
-          </div>
           <Link
             to="/search"
             className="text-sm lg:text-base text-blue-800 font-bold hover:underline lg:ml-20"
