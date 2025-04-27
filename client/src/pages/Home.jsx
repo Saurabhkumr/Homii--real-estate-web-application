@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 ">
       <div
         className="flex flex-col lg:flex-row relative"
         style={{ backgroundColor: "#131110", color: "white" }}
@@ -171,7 +171,7 @@ export default function Home() {
 
         {/* Right Section - Swiper */}
         <div
-          className="flex-none w-full lg:w-1/2 p-4 lg:p-10 lg:mr-20 mt-20"
+          className="flex-none w-full lg:w-1/2 p-4 lg:p-10 lg:mr-20 mt-10 mb-10"
           style={{ backgroundColor: "#131110" }}
         >
           <Swiper

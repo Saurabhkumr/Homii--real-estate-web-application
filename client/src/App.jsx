@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <BrowserRouter>
-      <Header></Header>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
@@ -33,7 +33,7 @@ export default function App() {
           />
         </Route>
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </BrowserRouter>
   );
 }

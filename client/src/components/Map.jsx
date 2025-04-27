@@ -9,7 +9,7 @@ const Map = ({ address, city, country }) => {
       zoom={1}
       scrollWheelZoom={false}
       style={{
-        height: "40vh",
+        height: "50vh",
         width: "100%",
         marginTop: "20px",
         zIndex: 0,
