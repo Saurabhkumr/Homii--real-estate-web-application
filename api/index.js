@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://Homii-real-estate.vercel.app"],
+    origin: ["http://localhost:5173", "https://homii-real-estate.vercel.app"],
     credentials: true,
   })
 );
