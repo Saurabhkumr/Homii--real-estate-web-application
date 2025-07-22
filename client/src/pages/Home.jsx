@@ -16,6 +16,13 @@ export default function Home() {
   const [saleListings, setSaleListings] = useState([]);
   const [rentListings, setRentListings] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const landingPageImages = [
+    "/photo1.jpg",
+    "/photo2.jpg",
+    "/photo3.jpg",
+    "/photo4.jpg",
+    "/photo5.jpg",
+  ];
 
   useEffect(() => {
     const fetchOfferListings = async () => {
@@ -179,12 +186,12 @@ export default function Home() {
             autoplay={{ delay: 3000, disableOnInteraction: false }} // Autoplay settings
             loop={true} // Loop settings
           >
-            {offerListings.map((listing) => (
-              <SwiperSlide key={listing._id}>
+            {landingPageImages.map((image, idx) => (
+              <SwiperSlide key={idx}>
                 <div className="h-[300px] lg:h-[500px] w-full relative rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src={listing.imageUrls[0]}
-                    alt={listing.title || "Listing image"} // Improve alt text for accessibility
+                    src={image}
+                    alt={"Listing image"} // Improve alt text for accessibility
                     className="object-cover w-full h-full"
                   />
                 </div>
