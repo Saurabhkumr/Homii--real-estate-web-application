@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import Contact from "../components/Contact";
 import Map from "../components/Map";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Listing() {
   SwiperCore.use([Navigation]);
@@ -30,7 +31,7 @@ export default function Listing() {
     const fetchListing = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`/api/listing/get/${params.listingId}`);
+        const res = await fetch(`${API_URL}/api/listing/get/${params.listingId}`);
         const data = await res.json();
         if (data.success === false) {
           setError(true);
