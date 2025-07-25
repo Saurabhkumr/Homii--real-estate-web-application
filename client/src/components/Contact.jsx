@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+const API_URL = import.meta.env.VITE_API_URL;
 export default function Contact({ listing }) {
   const [landlord, setLandlord] = useState(null);
   const [formData, setFormData] = useState({
@@ -16,7 +16,7 @@ export default function Contact({ listing }) {
   useEffect(() => {
     const fetchLandlord = async () => {
       try {
-        const res = await fetch(`/api/user/${listing.userRef}`, {
+        const res = await fetch(`${API_URL}/api/user/${listing.userRef}`, {
           credentials: "include",
         });
         console.log(res);
