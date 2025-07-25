@@ -139,6 +139,7 @@ export default function CreateListing() {
       setError(false);
       const res = await fetch(`${API_URL}/api/listing/create`, {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
